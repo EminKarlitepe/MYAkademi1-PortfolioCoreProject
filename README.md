@@ -146,6 +146,7 @@ Aşağıdaki veriler görüntülenebilir:
 - Sağ kısım: **Mesaj gönderme formu**, iç içe partial kullanılmıştır.
 - SweetAlert ile mesaj gönderimi sonrası kullanıcı bilgilendirilir.
 ![SiteBanaYazın](https://github.com/user-attachments/assets/e36630b9-c692-42b6-9448-048ead2abe45)
+![MesajBilgi](https://github.com/user-attachments/assets/437111f5-98ed-4a66-abea-ef419c5f6ec3)
 
 ### 📍 Harita / Footer
 - **Google Maps** API kullanılarak harita gösterilmiştir.
