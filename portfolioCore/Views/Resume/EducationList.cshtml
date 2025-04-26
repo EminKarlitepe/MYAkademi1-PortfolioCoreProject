@@ -1,0 +1,36 @@
+﻿@model List<Resume>
+
+@{
+    ViewData["Title"] = "EducationList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Eğitim Geçmişim</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Üniversite Adı</th>
+        <th>Eğitim Yılı</th>
+        <th>Bölüm</th>
+        <th>Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.ResumeDate</td>
+            <td>@item.Subtitle</td>
+            <td>@item.Description</td>
+            <td>
+                <a href="/Skill/DeleteResume/@item.ResumeId" class="btn btn-danger">Sil</a>
+            </td>
+            <td>
+                <a href="/Skill/UpdateResume/@item.ResumeId" class="btn btn-warning">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Skill/CreateResume/" class="btn btn-primary">Yeni Yetenek Girişi</a>

@@ -1,0 +1,19 @@
+﻿@model Stats
+
+@{
+    ViewData["Title"] = "UpdateStats";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>İstatistik Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="StatsId" />
+    <label>Yetenek Başlığı</label>
+    <input type="text" asp-for="StatsName" class="form-control" />
+    <br />
+    <label>Yetenek Değeri</label>
+    <input type="text" asp-for="StatsValue" class="form-control" />
+    <br />
+    <<button class="btn btn-primary">İstatistiği Ekle</button>
+</form>

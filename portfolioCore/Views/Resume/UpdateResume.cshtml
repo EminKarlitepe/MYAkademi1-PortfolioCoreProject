@@ -1,0 +1,25 @@
+﻿@model Resume
+
+@{
+    ViewData["Title"] = "UpdateResume";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h1>Eğitim Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="ResumeId" />
+    <label>Üniversite Adı</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Eğitim Yılı</label>
+    <input type="text" asp-for="ResumeDate" class="form-control" />
+    <br />
+    <label>Bölüm</label>
+    <input type="text" asp-for="Subtitle" class="form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+    <<button class="btn btn-primary">Yeteneği Ekle</button>
+</form>

@@ -1,0 +1,62 @@
+﻿@using PortfolioCore.Entities
+@model About
+
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda Bilgisi Güncelle</h2>
+
+<form asp-action="UpdateAbout" asp-controller="About" method="post">
+    <input type="hidden" asp-for="AboutId" />
+    <div class="form-group">
+        <label>İsim</label>
+        <input type="text" class="form-control" asp-for="FullName" />
+    </div>
+    <div class="form-group">
+        <label>Hakkımda İlk Açıklama</label>
+        <input type="text" class="form-control" asp-for="AboutHead" />
+    </div>
+    <div class="form-group">
+        <label>Doğum Tarihi</label>
+        <input type="date" class="form-control" asp-for="BirthDate" />
+    </div>
+    <div class="form-group">
+        <label>Linkedin</label>
+        <input type="text" class="form-control" asp-for="Linkedin" />
+    </div>
+    <div class="form-group">
+        <label>Telefon</label>
+        <input type="text" class="form-control" asp-for="PhoneNumber" />
+    </div>
+    <div class="form-group">
+        <label>Şehir</label>
+        <input type="text" class="form-control" asp-for="City" />
+    </div>
+    <div class="form-group">
+        <label>Yaş</label>
+        <input type="number" class="form-control" asp-for="Age" />
+    </div>
+    <div class="form-group">
+        <label>Eğitim</label>
+        <input type="text" class="form-control" asp-for="Degree" />
+    </div>
+    <div class="form-group">
+        <label>Mail</label>
+        <input type="email" class="form-control" asp-for="Email" />
+    </div>
+    <div class="form-group">
+        <label>Freelance</label>
+        <input type="text" class="form-control" asp-for="Freelance" />
+    </div>
+    <div class="form-group">
+        <label>Hakkımda Yazısı</label>
+        <textarea class="form-control" rows="4" asp-for="AboutText"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Resim Url</label>
+        <input type="text" class="form-control" asp-for="ImageUrl" />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
